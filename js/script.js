@@ -16,12 +16,12 @@ $(document).ready(function () {
                 <div class= "col" symbol="`+ card.symbol + `" cardid="` + card.id + `">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">` + card.symbol + `</h5>
+                        <h5 class="card-title">` + card.name + `</h5>
                         <div class="form-check form-switch card-toggle">
                         <label for=""><input class="form-check-input card-checkbox" type="checkbox" cardid="`+ card.id + `" ` + (checkedCards.includes(card.symbol) ? `checked="checked"` : "") + `></label>
                     </div>
                             <br>
-                                <p class="card-text">`+ card.name + `</p>
+                                <p class="card-text">`+ card.symbol + `</p>
                                 <p>
                                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" onclick="loadMoreInfo('`+ card.id + `')"
                                     data-bs-target="#card-info-`+ counter + `" aria-expanded="false"
